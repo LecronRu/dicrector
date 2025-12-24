@@ -6,8 +6,8 @@
 словаря или динамически, извлекать запросом конкретное слово.
 
 ### Установка компонента.
-`pip install . ` находясь в папке пакета или `pip install path/to/package` из любого другого 
-места.
+`pip install . ` находясь в папке пакета, или `pip install path/to/package` из другого 
+места файловой системы, или `pip install git+https://github.com/LecronRu/dicrector` из репозитория.
 
 ### Использование компонента.
  ```python
