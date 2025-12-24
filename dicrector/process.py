@@ -3,8 +3,8 @@ from itertools import chain
 from pathlib import Path
 from typing import Iterable
 
-from components import ProcessLevel, Depends
-from textparse import Line
+from .components import ProcessLevel, Depends
+from .textparse import Line
 
 chain_iter = chain.from_iterable
 

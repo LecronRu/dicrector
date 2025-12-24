@@ -4,9 +4,9 @@ from itertools import chain, zip_longest
 from razdel import tokenize
 
 # noinspection PyUnresolvedReferences
-import textparse  # для регистрации символа ударения
-from components import PatternRe, PatternWildcard, DictionaryIndex, ITextNode
-from indexer import Wildcard
+import dicrector.textparse  # для регистрации символа ударения
+from dicrector.components import PatternRe, PatternWildcard, DictionaryIndex, ITextNode
+from dicrector.indexer import Wildcard
 
 WORD_DELIMITER = r'\b'
 PUNCTUATION = set(string.punctuation)

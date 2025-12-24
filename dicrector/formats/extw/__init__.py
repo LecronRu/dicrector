@@ -1,5 +1,5 @@
-from components import Depends, ProcessLevel, Dictionary, RuleResolved, PatternFake
-from loaders import Loader, LoadDepends
+from dicrector.components import Depends, ProcessLevel, Dictionary, RuleResolved, PatternFake
+from dicrector.loaders import Loader, LoadDepends
 
 
 # noinspection PyUnusedLocal

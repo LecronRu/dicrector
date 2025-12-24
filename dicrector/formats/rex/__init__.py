@@ -1,5 +1,5 @@
-from components import Depends, ProcessLevel, Dictionary, Rule, PatternRe
-from loaders import textfile_dictionary
+from dicrector.components import Depends, ProcessLevel, Dictionary, Rule, PatternRe
+from dicrector.loaders import textfile_dictionary
 
 
 def parse_target(target: tuple, side_module):

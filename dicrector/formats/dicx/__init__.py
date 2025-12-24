@@ -1,5 +1,5 @@
-from components import Depends, ProcessLevel, Rule
-from loaders import textfile_dictionary
+from dicrector.components import Depends, ProcessLevel, Rule
+from dicrector.loaders import textfile_dictionary
 from .worker import DictionaryDicx, PatternDicx, parse_target
 
 

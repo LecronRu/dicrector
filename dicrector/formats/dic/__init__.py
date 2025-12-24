@@ -1,5 +1,5 @@
-from components import PatternWildcard, Rule, DictionaryIndex, ProcessLevel, Depends
-from loaders import textfile_dictionary
+from dicrector.components import PatternWildcard, Rule, DictionaryIndex, ProcessLevel, Depends
+from dicrector.loaders import textfile_dictionary
 
 
 depends = Depends(

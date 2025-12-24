@@ -1,1 +1,1 @@
-from process import Corrector, Formats
+from dicrector.process import Corrector, Formats

@@ -8,8 +8,8 @@ from pathlib import Path
 from types import ModuleType
 from typing import Protocol, Callable, Self, Optional, Generator
 
-from indexer import IIndexed, Indexer, Wildcard
-from loaders import LoadDepends, TPatternData, TTargetData
+from .indexer import IIndexed, Indexer, Wildcard
+from .loaders import LoadDepends, TPatternData, TTargetData
 
 
 class ITextNode(Protocol):
@@ -177,13 +177,15 @@ def side_module(dct_path: Path) -> TModuleLoader:
         if module != 'None':
             # noinspection PyTypeChecker
             return module
-        name = dct_path.name.replace('.', '_')
-        path = str(dct_path.parent.resolve())
-        if path not in sys.path:
-            sys.path.append(path)
-        try:
+        path = dct_path.resolve()
+        name = path.name.replace('.', '_')
+        full_path = path.parent / (name + '.py')
+        if full_path.exists():
+            parent = str(path.parent)
+            if parent not in sys.path:
+                sys.path.append(parent)
             module = __import__(name)
-        except ModuleNotFoundError:
+        else:
             module = None
         return module
     return _lazy_import

@@ -1,6 +1,6 @@
-from components import Depends, ProcessLevel, Dictionary, RuleResolved, PatternFake
-from loaders import Loader, LoadDepends
-from formats.extw import prepare_fake_rule, target_maker
+from dicrector.components import Depends, ProcessLevel, Dictionary, RuleResolved, PatternFake
+from dicrector.loaders import Loader, LoadDepends
+from dicrector.formats.extw import prepare_fake_rule, target_maker
 
 
 depends = Depends(

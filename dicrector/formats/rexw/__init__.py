@@ -1,6 +1,6 @@
-from components import Depends, ProcessLevel, Dictionary, Rule, PatternRe
-from loaders import textfile_dictionary
-from formats.rex import parse_target
+from dicrector.components import Depends, ProcessLevel, Dictionary, Rule, PatternRe
+from dicrector.loaders import textfile_dictionary
+from dicrector.formats.rex import parse_target
 
 depends = Depends(
     ProcessLevel.word,
