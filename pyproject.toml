@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dicrector"
+version = "0.3.0"
+authors = [
+  { name="Lecron", email="lecronru@gmail.com" },
+]
+description = "Text corrector"
+dependencies = [
+  "razdel",
+]
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+include = ["dicrector"]
+namespaces = false
